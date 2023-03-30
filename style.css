@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+/* style for image */
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+}
+ nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    /* align-items: center; */
+    justify-content: space-between;
+
+}
+ nav ul li{
+    float: left;
+    list-style: none;
+    margin: 20px 30px;
+    cursor: pointer;
+    padding-top: 7%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #e3dede;
+    font-weight: bold;
+    cursor: pointer;
+}
+nav ul li a:hover{
+    color:#F5D547;
+}
+.one{
+    margin-left: 10%;
+    margin-top: 13%;
+}
+.one h1{
+    font-size: 50px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+span{
+    color: #f20707e7;
+    font-weight: bold;
+}
+.one p{
+    line-height: 25px;
+    color:#ffffff
+}
+.one a{
+    background:#03fd52 ;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color:#034610 ;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+.images{
+    width: 40%;
+    /* height: 90%; */
+    height: 90vh;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.images img{
+    /* height: 80%; */
+    height: 80vh;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left1s;
+}
+.images >.three{
+    height: 80vh;
+}
+/* commented for background hover */
+/* .images:hover .two{
+    bottom: 40px;
+    left: 50%;
+    background-color: #000000;
+} */
+.images:hover .three{
+    left: 45%;
+    background-color: #ffffff;
+}
+/* .images .two{
+    transform: translateX(-40%);
+} */
+
+/* code for about me section */
+.about{
+    font-family: 'Josefin Sans' , sans-serif;
+    width: 100%;
+    padding: 78px 0px;
+    background: rgb(0, 0, 0);
+}
+.about img{
+    height: auto;
+    width: 420px;
+}
+.about-text{
+    width: 600px;
+    color: white
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h1{
+    font-size: 60px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.about-text h3{
+    color: white;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-decoration: underline red;
+}
+.about-text p{
+    color: #ffffff;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 20px;
+    margin-bottom: 45px;
+} 
+#button{
+    background:red;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 28px;
+    border-radius: 30px;
+    transition: 0.5s
+}
+#button:hover{
+    background: transparent;
+    border: 2px solid red;
+    cursor: pointer;
+}
+#button a{
+    text-decoration: none;
+    color:#fff;
+}
+
+/* this code is for Skills section */
+body{
+    background: #000000;
+}
+.inner{
+    padding-top: 20px;
+}
+
+.header{
+    text-align: center;
+    color: #ffffff;
+    padding: 1rem;
+    position: relative;
+}
+.header:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: #2ecc71;
+}
+/* container box */
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 75px;
+    font-size: 1.3rem;
+}
+.skill-box{
+    padding: 1rem;
+    color: #ddd;
+    cursor: pointer;
+}
+.skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before{
+    width: 35px;
+}
+
+/* this is for movement of symbols for upside movement */
+.skill-box:hover .five{
+    transform: translateY(-15px);
+}
+
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-top: 20px;
+    position: relative;
+}
+
+.skill-title:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 0;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background-color: #2ecc71;
+    transition: 0.5s;
+}
+.skill-title:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: #2ecc71;
+    transition: 0.5s;
+}
+
+.five{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 60px;
+    background-color: rgb(250, 248, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.five:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100px;
+    background: rgba(100,100,100,0.5);
+    border-radius: 45px 0 0 45px;
+}
+.skill-title h3{
+    color: #f20707e7;
+    margin-top : 0.5rem;
+}
+
+.skill-icon{
+    width: 70px;
+    z-index: 2;
+}
+
+@media screen and (max-width: 990px){
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+    }
+}
+
+/* this is for Contact_Info section */
+.contact{
+    padding: 40px 15%;
+}
+.contact{
+    background: #000000;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap : 6rem;
+}
+.contact-form h1{
+    font-size: 80px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.contact-form p{
+    color: #ddd;
+    letter-spacing: 1.5px;
+    line-height: 26px;
+    font-size: 1.1rem;
+    margin-bottom: 3.8rem;
+    position: relative;
+}
+.contact-form form{
+    position: relative;
+}
+.contact-form form input ,form textarea{
+    width: 100%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background-color: #191919;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+.contact-form textarea{
+    resize: none;
+    height: 200px;
+}
+.contact-form #button{
+    width:220px;
+}
+@media(max-width: 1570px){
+    .contact{
+        padding: 80px 3%;
+        transition: .2s;
+    }
+    .contact-form h1{
+        font-size: 60px;
+    }
+    .contact-form p{
+        margin-bottom: 3rem;
+    }
+}
+@media(max-width: 1080px){
+    .contact{
+        grid-gap:2rem;
+        transition:0.3s;
+    }
+}
+@media(max-width: 1000px){
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    .contact-form{
+        order: 2;
+    }
+}
+
+
+
